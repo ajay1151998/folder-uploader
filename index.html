@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folder Upload </title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      #picker {
+        margin-left: -94px;
+      }
+      #upfile1 {
+        margin-top: -15px;
+      }
+
+      #htxt{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Folder upload</h1>
+      <h3>Select folder</h3>
+    </div>
+    <div class="picker">
+      <div>
+        <label for="picker">
+          <img
+            src="/button.jpeg"
+            alt="button"
+            id="upfile1"
+            height="25px"
+            width="100px"
+            style="cursor: pointer"
+          />
+        </label>
+      </div>
+      <input type="file" id="picker" name="picker" webkitdirectory multiple />
+    </div>
+
+    <h1>Selected Files</h1>
+    <h3>Please Choose files</h3>
+    <table id="listing"></table>
+    <!-- link js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
